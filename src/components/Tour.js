@@ -14,11 +14,11 @@ const Tour = ({ image, date, title, info, location, duration, cost }) => {
           <p>
             <span>
               <i className="fas fa-map"></i>
-            </span>{' '}
+            </span>
             {location}
           </p>
+          <p>from ${cost}</p>
           <p>{duration} days</p>
-          <p>${cost}</p>
         </div>
       </div>
     </article>

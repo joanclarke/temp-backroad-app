@@ -1,5 +1,5 @@
-import Title from './Title'
 import { services } from '../data'
+import Title from './Title'
 import Service from './Service'
 const Services = () => {
   return (
@@ -8,11 +8,10 @@ const Services = () => {
 
       <div className="section-center services-center">
         {services.map((service) => {
-          return <Service key={service.id} {...service} />
+          return <Service {...service} key={service.id} />
         })}
       </div>
     </section>
   )
 }
-
 export default Services
